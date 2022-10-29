@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const Boot = () => {
+const Boot = ({children}) => {
 
   return (
 	<>
@@ -30,7 +30,8 @@ const Boot = () => {
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+      </Navbar>
+      {children}
 	</>
   )
 }
