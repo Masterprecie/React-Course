@@ -7,6 +7,8 @@ import {Routes, Route} from 'react-router-dom'
 import ReactProject1 from './Components/Projects/Project1/ReactProject1';
 import ReactProject2 from './Components/Projects/Project2/ReactProject2';
 import Children from './Components/Children';
+import ControlledInputs from './Components/Forms/ControlledInputs';
+import MultipleInputs from './Components/Forms/MultipleInputs';
 
 
 
@@ -22,6 +24,9 @@ function App() {
       </Login>}/>
       <Route path={'/UseStateCounter'} element={<UseStateCounter />} />
       <Route path={'/UseEffectBasics'} element={<UseEffectBasics />} />
+      <Route path={'/ControlledInputs'} element={<ControlledInputs/>} />
+      <Route path={'/MultipleInputs'} element={<MultipleInputs/>} />
+
       <Route path={'/ReactProject1'} element={<ReactProject1 />} />
       <Route path={'/ReactProject2'} element={<ReactProject2 />} />      
     </Routes>
